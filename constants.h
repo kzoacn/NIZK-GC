@@ -23,7 +23,7 @@ const int NUM_BITS=256;
 const int NUM_BYTES=NUM_BITS/8;
 const int NUM_INT=NUM_BYTES/4;
 
-const int REP=10;
+const int REP=256;
 //const int OPEN=0;
  
 #endif// CONFIG_H__
