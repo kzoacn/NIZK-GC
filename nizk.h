@@ -25,6 +25,7 @@ public:
 
     void prove(vector<int>alice_inputs){
         for(int i=0;i<REP;i++){
+            std::cerr<<i<<" "<<REP<<std::endl;
             GarbledCircuit *gc=new GarbledCircuit();
             Garbling::Gb(gc,circuit);
             GC.push_back(gc);

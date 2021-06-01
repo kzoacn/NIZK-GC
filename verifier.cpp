@@ -5,7 +5,7 @@
 
 int main(int argc,char **argv){  
     Circuit *circuit=new Circuit; 
-    circuit->from_file("cir.txt"); 
+    circuit->from_file("sha1.txt"); 
 
     FileIO *io=new FileIO("proof","rb");
     

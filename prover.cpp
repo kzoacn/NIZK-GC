@@ -5,7 +5,7 @@
 
 int main(int argc,char **argv){  
     Circuit *circuit=new Circuit; 
-    circuit->from_file("cir.txt"); 
+    circuit->from_file("sha1.txt"); 
 
     FileIO *io=new FileIO("proof","wb");
     
@@ -15,8 +15,8 @@ int main(int argc,char **argv){
  
     vector<int> alice_in;
 
-    for(int i=0;i<8;i++)
-        alice_in.push_back(9>>i&1);
+    for(int i=0;i<512;i++)
+        alice_in.push_back(0);
     
 
     nizk->prove(alice_in);

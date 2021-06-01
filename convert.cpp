@@ -88,9 +88,9 @@ class BristolFormat { public:
 int main(){
     circuit=new Circuit();
 
-    BristolFormat bf("sha-256.txt");
+    BristolFormat bf("sha-1.txt");
     bf.compute();
 
-    circuit->to_file("sha2.txt");
+    circuit->to_file("sha1.txt");
     return 0;
 }
